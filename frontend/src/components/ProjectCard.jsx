@@ -29,7 +29,8 @@ export default function ProjectCard({ project, index }) {
           <img
             src={image}
             alt={`Screenshot of ${name}`}
-            loading="lazy"
+            loading={index === 0 ? 'eager' : 'lazy'}
+            fetchpriority={index === 0 ? 'high' : 'auto'}
             decoding="async"
             className="h-full w-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.03]"
           />

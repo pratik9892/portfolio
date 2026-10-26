@@ -18,3 +18,5 @@ Rules:
 | [0006](0006-repo-layout-and-git.md) | Monorepo layout and git setup | Accepted | 2026-10-26 |
 | [0007](0007-configurable-port-and-build-secret.md) | Configurable host port; GitHub token as build secret | Accepted | 2026-10-26 |
 | [0008](0008-ai-review-hook-on-edits.md) | AI code-review hook on every edit | Accepted | 2026-10-26 |
+| [0009](0009-host-frontend-on-vercel.md) | Host the frontend on Vercel | Accepted | 2026-10-26 |
+| [0010](0010-vercel-web-analytics.md) | Visitor analytics with Vercel Web Analytics | Accepted | 2026-10-27 |

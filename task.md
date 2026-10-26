@@ -48,9 +48,10 @@ Legend: `[ ]` todo · `[~]` in progress · `[x]` done
 ## Phase 3 — Enhancements
 - [ ] Scheduled GitHub sync job writing repo stats into the DB
 - [ ] Admin auth + UI to manage projects
-- [ ] Page-view / project-click analytics
+- [x] Page-view analytics: Vercel Web Analytics (2026-10-27, ADR-0010). Project-click events not yet
 - [ ] CI (GitHub Actions): lint, build, push image
-- [ ] Stable public URL (ngrok static domain or real hosting)
+- [x] Stable public URL: Vercel, https://frontend-rosy-theta-97.vercel.app/ (2026-10-26, ADR-0009)
+- [x] Custom domain: https://www.pratiksawant.in (BigRock DNS: A `@` → 216.198.79.1, CNAME `www` → Vercel; apex 308-redirects to www) (2026-10-27)
 
 ---
 
@@ -63,3 +64,7 @@ Legend: `[ ]` todo · `[~]` in progress · `[x]` done
 | 2026-10-26 | Profile TODOs filled. Experience section and nav link become "Education" when `experience` is empty. Added review hook (ADR-0008) |
 | 2026-10-26 | UI pass 1: Projects moved first, top 4 featured, card buttons and optional `image`; core-stack skills; availability badge and LinkedIn in hero; Certifications in Education section; copyable email; OG tags. New profile fields: `availability`, `coreSkills`, `certifications` (the Phase 2 API must return these too) |
 | 2026-10-26 | UI pass 2 (redesign): zinc palette, Geist fonts, eyebrow section headers, scroll reveals (`Reveal`, respects reduced motion), scrollspy navbar + animated mobile menu + skip link, hero code card, About facts panel, certification card, contact CTA card, inline SVG icons. No new dependencies. Placeholder art for projects without `image`; Oracle certification added |
+| 2026-10-26 | First commit (`cc02c29`) pushed to https://github.com/pratik9892/portfolio (public) |
+| 2026-10-26 | Deployed to Vercel (ADR-0009). First project image now loads eagerly |
+| 2026-10-27 | Custom domain pratiksawant.in live with HTTPS; canonical + og:url point to https://www.pratiksawant.in/ |
+| 2026-10-27 | Added Vercel Web Analytics (ADR-0010) |
