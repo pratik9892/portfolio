@@ -1,6 +1,6 @@
 # 0005 — Phase 2 backend: Express + PostgreSQL
 
-- **Status:** Accepted (implementation deferred to Phase 2)
+- **Status:** Superseded by [0011](0011-drop-phase2-backend.md)
 - **Date:** 2026-10-26
 - **Phase:** 2
 

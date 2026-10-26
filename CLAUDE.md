@@ -8,7 +8,7 @@ Conventions:
 - Every new architectural or tooling decision gets a new ADR in `decisions/` and a row in its index. Don't edit an accepted ADR; supersede it with a new one.
 - Tick tasks in `task.md` as they finish and add a line to its Log.
 - The UI gets data only through `frontend/src/services/projectsService.js` (ADR-0001). Don't import data JSON directly into components.
-- The Phase 2 API must return the same shapes as `frontend/src/data/*.json`.
+- The site is static. The Phase 2 backend was dropped (ADR-0011); data lives in `frontend/src/data/*.json`. If an API is ever revived, it must return the same shapes.
 - Secrets live in `.env` only (see `.env.example`).
 
 Run:

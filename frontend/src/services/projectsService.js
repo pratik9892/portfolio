@@ -1,6 +1,6 @@
 // The single data-access seam (ADR-0001). Components never import data files
-// directly. Phase 1 reads bundled JSON; Phase 2 sets VITE_DATA_SOURCE=api and
-// the Express API returns the same shapes.
+// directly. It reads bundled JSON; VITE_DATA_SOURCE=api is kept dormant in case
+// an API returning the same shapes is ever added (ADR-0011).
 const source = import.meta.env.VITE_DATA_SOURCE ?? 'static'
 
 async function fetchJson(path) {

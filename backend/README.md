@@ -1,6 +1,6 @@
-# Backend (Phase 2, not started)
+# Backend (dropped)
 
-Placeholder for the Express + PostgreSQL API. See [ADR-0005](../decisions/0005-backend-express-postgres-phase2.md) and `task.md` Phase 2.
+**Not being built.** Phase 2 was dropped in [ADR-0011](../decisions/0011-drop-phase2-backend.md); the portfolio stays static. This file keeps the original plan from [ADR-0005](../decisions/0005-backend-express-postgres-phase2.md) for reference, in case an API is ever needed.
 
 ## Contract
 The responses must match the Phase 1 JSON files exactly (ADR-0001):

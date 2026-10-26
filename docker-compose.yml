@@ -26,7 +26,7 @@ services:
         condition: service_healthy
     restart: unless-stopped
 
-  # Phase 2 (ADR-0005): start with `docker compose --profile backend up`.
+  # Dormant: Phase 2 backend was dropped (ADR-0011). Kept for reference; not built.
   api:
     profiles: [backend]
     build: ./backend

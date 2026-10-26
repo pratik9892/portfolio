@@ -1,10 +1,10 @@
 # Portfolio
 
-Personal portfolio for Pratik Sawant. It shows curated GitHub projects with live repo stats and is served by nginx in Docker, with a public URL from ngrok.
+Personal portfolio for Pratik Sawant, live at https://www.pratiksawant.in (Vercel, ADR-0009). It shows curated GitHub projects with live repo stats. The Docker + nginx (+ ngrok) setup runs it locally.
 
 - Progress: [`task.md`](task.md)
 - Decisions: [`decisions/`](decisions/README.md)
-- Phase 2 backend contract: [`backend/README.md`](backend/README.md)
+- Backend: dropped, the site is static ([ADR-0011](decisions/0011-drop-phase2-backend.md))
 
 ## Edit the content
 | What | File |
@@ -45,7 +45,7 @@ Builds make one unauthenticated GitHub API call per project (limit: 60/hour). If
 ## Structure
 ```
 frontend/   React + Vite + Tailwind app, Dockerfile (multi-stage → nginx)
-nginx/      nginx.conf (SPA fallback, caching, gzip, /healthz, Phase 2 /api proxy)
-backend/    Phase 2 Express + Postgres (placeholder)
+nginx/      nginx.conf (SPA fallback, caching, gzip, /healthz, dormant /api proxy)
+backend/    Dropped Express + Postgres plan, kept for reference (ADR-0011)
 decisions/  Architecture decision records
 ```

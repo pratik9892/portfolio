@@ -34,20 +34,17 @@ Legend: `[ ]` todo · `[~]` in progress · `[x]` done
 
 **Done when:** site is reachable via the ngrok URL and shows the curated projects with live GitHub stats.
 
-## Phase 2 — Backend + database (ADR-0005)
-- [ ] Scaffold Express app in `backend/` (Dockerfile, health check)
-- [ ] PostgreSQL schema: `projects`, `contact_messages` (+ migrations)
-- [ ] Seed `projects` from `frontend/src/data/projects.json`
-- [ ] Endpoints: `GET /api/projects`, `GET /api/profile`, `POST /api/contact` (same JSON shape as Phase 1)
-- [ ] Enable nginx `/api/` proxy block
-- [ ] Build frontend with `VITE_DATA_SOURCE=api`; Contact section switches from mailto to form
-- [ ] Remove `profiles: [backend]` gating or document `docker compose --profile backend up`
-
-**Done when:** frontend reads all data from the API and contact form messages land in Postgres.
+## Phase 2 — Backend + database: DROPPED (ADR-0011, supersedes ADR-0005)
+Not needed. A portfolio's job is to show projects, and an API returning the same data as the JSON files adds nothing visitors can see. The data seam, the commented nginx `/api/` block and the compose `backend` profile stay as dormant scaffolding.
 
 ## Phase 3 — Enhancements
-- [ ] Scheduled GitHub sync job writing repo stats into the DB
-- [ ] Admin auth + UI to manage projects
+- ~~Scheduled GitHub sync job writing repo stats into the DB~~ (dropped with Phase 2)
+- ~~Admin auth + UI to manage projects~~ (dropped with Phase 2)
+- [ ] Screenshots / architecture diagrams for Code Judge, myTube, Whiteboard
+- [ ] Deploy Collaborative Whiteboard live (adds a Live demo button)
+- [ ] Case-study pages for the top 2 projects
+- [ ] Link-preview image (og:image) and initials favicon
+- [ ] Lighthouse audit (target 95+)
 - [x] Page-view analytics: Vercel Web Analytics (2026-10-27, ADR-0010). Project-click events not yet
 - [ ] CI (GitHub Actions): lint, build, push image
 - [x] Stable public URL: Vercel, https://frontend-rosy-theta-97.vercel.app/ (2026-10-26, ADR-0009)
@@ -68,3 +65,4 @@ Legend: `[ ]` todo · `[~]` in progress · `[x]` done
 | 2026-10-26 | Deployed to Vercel (ADR-0009). First project image now loads eagerly |
 | 2026-10-27 | Custom domain pratiksawant.in live with HTTPS; canonical + og:url point to https://www.pratiksawant.in/ |
 | 2026-10-27 | Added Vercel Web Analytics (ADR-0010) |
+| 2026-10-27 | Phase 2 backend dropped (ADR-0011 supersedes ADR-0005). Phase 3 refocused on project content |

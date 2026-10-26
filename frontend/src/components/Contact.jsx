@@ -4,8 +4,7 @@ import { ArrowRight, Check, Copy, GitHub, LinkedIn, Mail } from './Icons'
 
 const socialIcons = { GitHub, LinkedIn }
 
-// Phase 1: mailto + socials. Phase 2 replaces the mailto button with a form
-// that POSTs to /api/contact (see task.md).
+// Contact is mailto + copy-email + socials. No backend form (ADR-0011).
 export default function Contact({ profile }) {
   const socials = profile.socials.filter((s) => s.url)
   const [copied, setCopied] = useState(false)

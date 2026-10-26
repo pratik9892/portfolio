@@ -14,9 +14,10 @@ Rules:
 | [0002](0002-frontend-stack-react-vite-tailwind.md) | Frontend stack: React + Vite + Tailwind | Accepted | 2026-10-26 |
 | [0003](0003-project-data-curated-json-build-time-fetch.md) | Project data: curated JSON + build-time GitHub fetch | Accepted | 2026-10-26 |
 | [0004](0004-serving-docker-nginx-ngrok.md) | Serving: Docker + nginx + ngrok container | Accepted | 2026-10-26 |
-| [0005](0005-backend-express-postgres-phase2.md) | Phase 2 backend: Express + PostgreSQL | Accepted | 2026-10-26 |
+| [0005](0005-backend-express-postgres-phase2.md) | Phase 2 backend: Express + PostgreSQL | Superseded by 0011 | 2026-10-26 |
 | [0006](0006-repo-layout-and-git.md) | Monorepo layout and git setup | Accepted | 2026-10-26 |
 | [0007](0007-configurable-port-and-build-secret.md) | Configurable host port; GitHub token as build secret | Accepted | 2026-10-26 |
 | [0008](0008-ai-review-hook-on-edits.md) | AI code-review hook on every edit | Accepted | 2026-10-26 |
 | [0009](0009-host-frontend-on-vercel.md) | Host the frontend on Vercel | Accepted | 2026-10-26 |
 | [0010](0010-vercel-web-analytics.md) | Visitor analytics with Vercel Web Analytics | Accepted | 2026-10-27 |
+| [0011](0011-drop-phase2-backend.md) | Drop the Phase 2 backend; the portfolio stays static | Accepted | 2026-10-27 |
