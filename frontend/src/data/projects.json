@@ -1,0 +1,166 @@
+[
+  {
+    "repo": "short_url",
+    "title": "Shortly — URL Shortener",
+    "image" : "/projects/image.png",
+    "summary": "A full-stack URL shortener with accounts, click analytics and background jobs.",
+    "highlights": [
+      "Express API with JWT auth and a separate BullMQ worker for email and analytics jobs",
+      "MongoDB for links and users, Redis for queues",
+      "Dockerised full-stack setup; frontend on Vercel, API on Render"
+    ],
+    "tech": [
+      "React",
+      "Vite",
+      "Express",
+      "MongoDB",
+      "Redis",
+      "BullMQ",
+      "Docker"
+    ],
+    "repoUrls": [
+      {
+        "label": "Code",
+        "url": "https://github.com/pratik9892/short_url"
+      }
+    ],
+    "liveUrl": "https://short-url-one-jet.vercel.app",
+    "featured": true,
+    "order": 1
+  },
+  {
+    "repo": "collaborative-whiteboard-frontend",
+    "title": "Collaborative Whiteboard",
+    "summary": "A real-time whiteboard where several users draw on the same canvas at once.",
+    "highlights": [
+      "Live drawing sync between users over Socket.IO",
+      "Accounts with JWT + bcrypt, boards persisted in MongoDB",
+      "Export a board to PDF with jsPDF"
+    ],
+    "tech": [
+      "React",
+      "Socket.IO",
+      "Express",
+      "MongoDB",
+      "Tailwind CSS"
+    ],
+    "repoUrls": [
+      {
+        "label": "Frontend",
+        "url": "https://github.com/pratik9892/collaborative-whiteboard-frontend"
+      },
+      {
+        "label": "Backend",
+        "url": "https://github.com/pratik9892/collaborative-whiteboard-backend"
+      }
+    ],
+    "liveUrl": "",
+    "featured": true,
+    "order": 2
+  },
+  {
+    "repo": "evaluator-service",
+    "title": "Code Judge — Evaluator & Problem Services",
+    "summary": "Microservices for an online-judge platform: one manages problems, the other evaluates submissions through a job queue.",
+    "highlights": [
+      "Evaluator in TypeScript: BullMQ + Redis queue with a Bull Board dashboard, zod-validated payloads",
+      "Problem service: Express + MongoDB, Markdown problem statements sanitised before storage",
+      "Structured logging with Winston shipped to MongoDB"
+    ],
+    "tech": [
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "BullMQ",
+      "Redis",
+      "MongoDB"
+    ],
+    "repoUrls": [
+      {
+        "label": "Evaluator",
+        "url": "https://github.com/pratik9892/evaluator-service"
+      },
+      {
+        "label": "Problems",
+        "url": "https://github.com/pratik9892/problem-service"
+      }
+    ],
+    "liveUrl": "",
+    "featured": true,
+    "order": 3
+  },
+  {
+    "repo": "myTube",
+    "title": "myTube — Video Platform Backend",
+    "summary": "The backend for a video streaming app: uploads, users and paginated feeds.",
+    "highlights": [
+      "Video and thumbnail uploads via Multer to Cloudinary",
+      "Access/refresh-token auth with JWT and bcrypt",
+      "Aggregation pipelines with pagination for feeds and channel stats"
+    ],
+    "tech": [
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Cloudinary",
+      "JWT"
+    ],
+    "repoUrls": [
+      {
+        "label": "Code",
+        "url": "https://github.com/pratik9892/myTube"
+      }
+    ],
+    "liveUrl": "",
+    "featured": true,
+    "order": 4
+  },
+  {
+    "repo": "movie_booking_service",
+    "title": "Movie Booking Service",
+    "summary": "A BookMyShow-style backend for movies, theatres and bookings.",
+    "highlights": [
+      "REST API for movies, theatres and bookings",
+      "MongoDB data model with Mongoose"
+    ],
+    "tech": [
+      "Node.js",
+      "Express",
+      "MongoDB"
+    ],
+    "repoUrls": [
+      {
+        "label": "Code",
+        "url": "https://github.com/pratik9892/movie_booking_service"
+      }
+    ],
+    "liveUrl": "",
+    "featured": false,
+    "order": 5
+  },
+  {
+    "repo": "appwriteBlog",
+    "title": "Appwrite Blog",
+    "summary": "A blogging app using Appwrite as a backend-as-a-service, with a rich-text editor.",
+    "highlights": [
+      "Auth and database on Appwrite",
+      "Forms with react-hook-form, state with Redux Toolkit",
+      "TinyMCE rich-text editor for posts"
+    ],
+    "tech": [
+      "React",
+      "Redux Toolkit",
+      "Appwrite",
+      "Tailwind CSS"
+    ],
+    "repoUrls": [
+      {
+        "label": "Code",
+        "url": "https://github.com/pratik9892/appwriteBlog"
+      }
+    ],
+    "liveUrl": "",
+    "featured": false,
+    "order": 6
+  }
+]

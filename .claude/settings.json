@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "agent",
+            "statusMessage": "Reviewing change...",
+            "timeout": 120,
+            "prompt": "You are a code reviewer for a portfolio project (React frontend in frontend/, backend in backend/, nginx, Docker). A file was just changed. Hook input: $ARGUMENTS\n\nRead the changed file (tool_input.file_path) and review ONLY the change. If the file is not source code or config (e.g. .md, task.md, decisions/), approve immediately.\n\nCheck for: correctness bugs, broken imports, security issues (secrets in code — secrets belong only in .env), and project rules from CLAUDE.md: components must get data only through frontend/src/services/projectsService.js and must not import frontend/src/data/*.json directly.\n\nOnly fail the review for real, concrete problems — not style nits. If you fail it, list each problem as file:line and a one-line fix."
+          }
+        ]
+      }
+    ]
+  }
+}

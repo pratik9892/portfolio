@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    scrollbar-gutter: stable;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-white font-sans text-[15px] text-zinc-600 antialiased dark:bg-zinc-950 dark:text-zinc-400 sm:text-base;
+    font-feature-settings: 'ss01', 'cv11';
+    text-rendering: optimizeLegibility;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply text-balance text-zinc-900 dark:text-zinc-50;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  ::selection {
+    @apply bg-indigo-500/20 text-zinc-900 dark:text-white;
+  }
+  :focus-visible {
+    @apply rounded-md outline-none ring-2 ring-indigo-500 ring-offset-2 ring-offset-white dark:ring-offset-zinc-950;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+  }
+  .section {
+    @apply py-24 sm:py-32;
+  }
+
+  /* Section heading: mono eyebrow, then title, then optional lede. */
+  .eyebrow {
+    @apply flex items-center gap-3 font-mono text-xs uppercase tracking-[0.2em] text-indigo-600 dark:text-indigo-400;
+  }
+  .eyebrow::after {
+    content: '';
+    @apply h-px w-10 bg-current opacity-40;
+  }
+  .section-title {
+    @apply mt-4 text-3xl font-semibold tracking-tight sm:text-4xl;
+  }
+  .section-lede {
+    @apply mt-4 max-w-2xl text-base leading-relaxed sm:text-lg;
+  }
+
+  .card {
+    @apply rounded-2xl border border-zinc-200/80 bg-white transition duration-500 ease-out dark:border-zinc-800/80 dark:bg-zinc-900/40;
+  }
+  .card-hover {
+    @apply hover:-translate-y-1 hover:border-zinc-300 hover:shadow-[0_24px_48px_-24px_rgb(24_24_27/0.18)] dark:hover:border-zinc-700 dark:hover:shadow-[0_24px_48px_-24px_rgb(0_0_0/0.6)];
+  }
+
+  .badge {
+    @apply inline-flex items-center rounded-md border border-zinc-200 bg-zinc-50 px-2 py-0.5 font-mono text-[11px] text-zinc-600 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-400;
+  }
+
+  .btn {
+    @apply inline-flex select-none items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium transition duration-300 ease-out active:scale-[0.97];
+  }
+  .btn-primary {
+    @apply btn bg-zinc-900 text-white shadow-sm hover:bg-zinc-700 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200;
+  }
+  .btn-ghost {
+    @apply btn border border-zinc-200 text-zinc-800 hover:border-zinc-300 hover:bg-zinc-50 dark:border-zinc-800 dark:text-zinc-200 dark:hover:border-zinc-700 dark:hover:bg-zinc-900;
+  }
+  .btn-sm {
+    @apply px-3.5 py-1.5 text-[13px];
+  }
+  /* Arrow that nudges on hover; put inside a .btn. */
+  .btn-arrow,
+  .btn-arrow-up {
+    @apply transition-transform duration-300 ease-out;
+  }
+  .btn:hover .btn-arrow {
+    transform: translateX(2px);
+  }
+  .btn:hover .btn-arrow-up {
+    transform: translate(2px, -2px);
+  }
+
+  .link {
+    @apply font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 transition-colors hover:decoration-indigo-500 dark:text-zinc-100 dark:decoration-zinc-700 dark:hover:decoration-indigo-400;
+  }
+
+  /* Scroll reveal, driven by <Reveal>. */
+  .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition:
+      opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+      transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+    transition-delay: var(--reveal-delay, 0ms);
+  }
+  .reveal[data-visible='true'] {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

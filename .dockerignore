@@ -1,0 +1,7 @@
+**/node_modules
+**/dist
+.git
+.env
+decisions
+*.md
+frontend/src/data/projects.generated.json

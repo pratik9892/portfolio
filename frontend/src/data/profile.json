@@ -1,0 +1,115 @@
+{
+  "name": "Pratik Sawant",
+  "role": "Full-Stack Developer",
+  "availability": "2026 CS graduate · Open to SDE / backend roles",
+  "tagline": "I build web apps end to end — React frontends, Node.js services, queues, sockets and the Docker plumbing that ships them.",
+  "about": [
+    "I’m a software engineer and 2026 Computer Science graduate at the start of my career. I enjoy building reliable systems that solve real problems, especially the backend logic, APIs and background processes that keep products running smoothly. I’m looking for an engineering role where I can ship meaningful work, learn from a strong team and grow into a dependable engineer.",
+    "Most of my recent work is backend-heavy JavaScript and TypeScript: REST APIs with Express, real-time features with Socket.IO, background jobs with BullMQ and Redis, and MongoDB for storage."
+  ],
+  "location": "Thane, India",
+  "email": "pratiksawant474@gmail.com",
+  "resumeUrl": "https://drive.google.com/file/d/1HhZAu-XDpWrWi1YeWPwbSWrpjxWcexuH/view?usp=drive_link",
+  "socials": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/pratik9892"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/pratik-sawant-cs/"
+    }
+  ],
+  "coreSkills": [
+    "Node.js",
+    "Express",
+    "React",
+    "MongoDB",
+    "Redis",
+    "BullMQ",
+    "Docker"
+  ],
+  "skills": [
+    {
+      "group": "Languages",
+      "items": [
+        "JavaScript",
+        "TypeScript",
+        "HTML",
+        "CSS",
+        "Python",
+        "C"
+      ]
+    },
+    {
+      "group": "Frontend",
+      "items": [
+        "React",
+        "Redux Toolkit",
+        "React Router",
+        "Tailwind CSS",
+        "Vite"
+      ]
+    },
+    {
+      "group": "Backend",
+      "items": [
+        "Node.js",
+        "Express",
+        "Socket.IO",
+        "BullMQ",
+        "REST APIs",
+        "JWT auth"
+      ]
+    },
+    {
+      "group": "Data",
+      "items": [
+        "MongoDB",
+        "Mongoose",
+        "Redis",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "group": "DevOps & Tools",
+      "items": [
+        "Docker",
+        "nginx",
+        "Git",
+        "Vercel",
+        "Render"
+      ]
+    }
+  ],
+  "experience": [],
+  "education": [
+    {
+      "title": "B.E/B.Tech | Computer Science Engineering",
+      "org": "University of Mumbai",
+      "period": "2022 — 2026",
+      "CGPA": "7.84",
+      "points": []
+    },
+    {
+      "title": "HSC",
+      "org": "Maharashtra State Board",
+      "period": "2020 — 2022",
+      "points": []
+    },
+    {
+      "title": "SSC",
+      "org": "Maharashtra State Board",
+      "period": "2018 — 2020",
+      "points": []
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Agentic AI Certified Foundations Associate",
+      "issuer": "Oracle",
+      "date": "Oct 2026",
+      "url": "https://catalog-education.oracle.com/ords/certview/sharebadge_m?id=AA1CC03B3C090FD7ECE26C407F7BD6039F232014BFDFE7C3AB47E0C1F4DB17F0"
+    }
+  ]
+}
