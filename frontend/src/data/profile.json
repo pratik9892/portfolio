@@ -110,6 +110,12 @@
       "issuer": "Oracle",
       "date": "Oct 2026",
       "url": "https://catalog-education.oracle.com/ords/certview/sharebadge_m?id=AA1CC03B3C090FD7ECE26C407F7BD6039F232014BFDFE7C3AB47E0C1F4DB17F0"
+    },
+    {
+      "title": "Claude Code 101",
+      "issuer": "Claude",
+      "date": "Oct 2026",
+      "url": "https://academy.claude.com/verify/7a4d0809b68bd43bce7f983e5cab057c"
     }
   ]
 }
